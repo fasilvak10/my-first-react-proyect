@@ -1,0 +1,70 @@
+React!
+
+el DOM es Document Object Model: es cuando estamos en el navegador;
+Para crear el proyecto se debe importar la biblioteca de React a través de import / from 
+    react (React)
+    react-dom/client (ReactDom)
+
+luego se debe acceder al elemento de HTML definido como root;
+    const rootElement = document.getElementById('root');
+    const root = ReactDom.createRoot(rootElement)
+    root.render(<h1>Hello World</h1>);
+
+React trabaja con componentes que son reutilizables, se escribe una vez y se reutiliza. Se crea con un componente inicial (el componente root). Siempre debe haber un componente que contenga todo. 
+
+primer componente:
+son funciones. pueden retornar un pedazo de hrml. se pasa a traves de render;
+
+Para llamar a la función dentro de render se utiliza una etiqueta <div> y luego el nombre de la función en llaves {} o en etiqueta. Si es etiqueta, la misma puede escribir con el método Self Closing Tag (solo una etiqueta con el / al final)
+
+La regla es que siempre debe haber un elemento que contenga al resto para que pueda ser renderizado. en este caso se usa siempre un <div>
+
+La sintaxis que se utiliza en react es JSX (script y html). En javascript cuando se utiliza react suele utilizarse un operador ternario. 
+
+JSON.strintify
+
+hay un etiqueta especial que nos JSX denominada 'Fragment'
+
+Los componentes en React son archivos que anuncian su función siempre con la primer palabra en mayuscula (a ese método de anunciación se le conoce como PascalCase)
+
+emascript:
+Utilizando emascript se exportan los modulos que necesita el index para renderizar
+
+Para llamar a los componenetes se puede usar el export en la function o export default y el nombre de la función
+
+cambiar la extensión a JSX para utilizar vite
+
+Props:
+Son parametros de las funciones que sirven para la función, dan valores
+Los parametros se pueden tomar desde la función como objetos
+{}
+
+default props - props type () es un paquete, npm props types
+    npm i prop-types
+    import PropTypes from 'prop-types'; // ES6
+
+esta biblioteca sirve para detectar errores en el tipo de valor que está recibiendo la función componente. 
+
+Para los styles si se agrega en la linea o dentro de la etiqueta, se deben indicar a travé de llaves puesto que el codigo espera lenguaje de javascript. 
+    Por ejemplo <h1 style: {{background: '#202020'}}>
+
+otra forma es agregar el estilo como si fuera una variable
+    const carStyles = {background: '#202020', color: '#fff', padding: '20px'};  
+
+Finalmente se puede crear e importar un archivo css. Para ellos se debe importar a partir de import seleccionando unicamente la dirección del archivo
+    import './style.css'
+
+Se pueden importar clases o funciones. lo mas simplehoy   es  utilizar funciones como componentes. 
+
+
+hooks basicos
+    use state = es un contenedor de valores y nos permite y cambiando. Tiene una estructura de arreglo [valor, función que actualiza el valor]
+    use effect 
+    use context
+
+Hola
+
+
+
+
+
